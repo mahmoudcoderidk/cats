@@ -18,6 +18,11 @@ h2, h3, h4 {
     font-weight: bold;
 }
 
+.cat-facts {
+    color: rbg(20, 10, 100
+    font-weight: bold;
+}
+
 /* "This cat will explode" - Fiery Red-Orange */
 .explode-text {
     color: rgb(255, 85, 0);
