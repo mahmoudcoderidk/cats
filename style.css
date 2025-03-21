@@ -1,0 +1,37 @@
+body {
+    background-color: rgb(20, 40, 60);
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    color: rgb(200, 200, 200);
+}
+
+h1 {
+    color: rgba(30, 100, 40, 1);
+    text-align: center;
+}
+
+h2, h3, h4 {
+    color: rgb(144, 238, 144);
+}
+
+.cat-name {
+    color: rgb(255, 215, 0);
+    font-weight: bold;
+}
+
+/* "This cat will explode" - Fiery Red-Orange */
+.explode-text {
+    color: rgb(255, 85, 0);
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p, a {
+    color: rgb(150, 220, 255);
+}
+
+a:hover {
+    color: rgb(255, 255, 180);
+}
+
+
