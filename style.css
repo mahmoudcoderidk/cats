@@ -51,7 +51,7 @@ h1 {
 }
 
 #cat-facts h2 {
-    color: #00FFA3 ; /* idk name */
+    color: #00FFA3 !important; /* idk name */
 }
 
 
@@ -91,19 +91,6 @@ nav a:hover {
 
 nav a:active {
     color: #FF4500; /* Optional: Color when clicking (orange-red) */
-}
-a {
-    all: unset; /* Removes all default link styling */
-    color: white;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #FFD700;
-}
-
-a:active {
-    color: white;
 }
 
 
