@@ -59,6 +59,10 @@ h1 {
     color: #05A7AD; /* Dark Turquoise */
     font-weight: bold;
 }
+#cat-facts > h2 {
+    color:  rgb(255, 85, 0) !important; /* red-orange */
+}
+
 
 .explode-text {
     color: rgb(255, 85, 0) !important; /* Fiery Red-Orange */
