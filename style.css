@@ -8,6 +8,10 @@ h1 {
     color: rgba(30, 100, 40, 1);
     text-align: center;
 }
+.emoji {
+    hight: 2em;
+    vertical-align: middle;
+}
 
 h2, h3, h4 {
     color: rgb(144, 238, 144);
