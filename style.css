@@ -5,17 +5,28 @@ body {
 }
 
 #the-cool-cats a {
-    display: inline-block; /* Makes sure the transform works properly */
-    text-decoration: none; /* Removes underline from links */
+    display: inline-block;
+    text-decoration: none;
     color: white; /* Default text color */
-    font-size: 18px; /* Adjust the size */
+    font-size: 18px;
     transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
 
 #the-cool-cats a:hover {
-    transform: translateX(5px) scale(1.1); /* Move slightly right and grow */
+    transform: translateX(10px) scale(1.1); /* Move right and grow */
 }
 
+/* Custom colors for names */
+.cat-name:nth-child(1) { color: #FFFFFF; } /* Scoop */
+.cat-name:nth-child(2) { color: #FFFFFF; } /* Nik ☆ */
+.cat-name:nth-child(3) { color: #FFFFFF; } /* Kiki <3 */
+.cat-name:nth-child(4) { color: #FFFFFF; } /* Ketch */
+.cat-name:nth-child(5) { color: #FFFFFF; } /* Soda :3 */
+.cat-name:nth-child(6) { color: #FFFFFF; } /* Paranoid nico */
+.cat-name:nth-child(7) { color: #FFFFFF; } /* Ribblubs ♝ */
+.cat-name:nth-child(8) { color: #FFFFFF; font-style: italic; } /* Aegle rip */
+
+/* Custom hover colors */
 .cat-name:nth-child(1):hover { color: #413A5D; } /* Scoop */
 .cat-name:nth-child(2):hover { color: #16D2EC; } /* Nik ☆ */
 .cat-name:nth-child(3):hover { color: #D39FF4; } /* Kiki <3 */
@@ -23,26 +34,15 @@ body {
 .cat-name:nth-child(5):hover { color: #01785D; } /* Soda :3 */
 .cat-name:nth-child(6):hover { color: #5B5E5D; } /* Paranoid nico */
 .cat-name:nth-child(7):hover { color: #7A29FF; } /* Ribblubs ♝ */
-.cat-name:nth-child(8):hover { color: #000000; font-style: italic; } /* Aegle rip */
+.cat-name:nth-child(8):hover { color: #000000; } /* Aegle rip */
 
 h1 {
     color: rgba(30, 100, 40, 1);
     text-align: center;
 }
 
-.emoji {
-    height: 2em;
-    vertical-align: middle;
-}
-
 h2, h3, h4 {
     color: rgb(144, 238, 144);
-}
-
-.cat-name {
-    color: white; /* Default to white */
-    font-weight: bold;
-    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .cats-facts {
@@ -61,10 +61,4 @@ h2, h3, h4 {
 p, a {
     color: rgb(150, 220, 255);
 }
-
-
-a:hover {
-    color: rgb(255, 255, 180);
-}
-
 
