@@ -60,15 +60,15 @@ h1 {
     font-weight: bold;
 }
 
-/* "This cat will explode" - Fiery Red-Orange */
 .explode-text {
-    color: rgb(255, 85, 0);
+    color: rgb(255, 85, 0) !important; /* Fiery Red-Orange */
     font-size: 1.5em;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-p, a {
-    color: rgb(150, 220, 255);
+
+#cat-facts p, #cat-facts a {
+    color: #05A7AD; /* Only applies to facts */
 }
 
