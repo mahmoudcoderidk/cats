@@ -51,7 +51,7 @@ h1 {
 }
 
 #cat-facts h3 {
-    color: #00FFA3 ; /* idk name */
+    color: #00FFA3 !important; /* idk name */
 }
 
 
