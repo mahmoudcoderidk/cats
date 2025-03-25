@@ -12,10 +12,11 @@ body {
 .cat-name:nth-child(2) a:hover { color: #1612EC; } /* Nik ☆ */
 .cat-name:nth-child(3) a:hover { color: #D39FF4; } /* Kiki <3 */
 .cat-name:nth-child(4) a:hover { color: #D39FF4; } /* Ketch */
-.cat-name:nth-child(5) a:hover { color: #01785D; } /* Soda :3 */
-.cat-name:nth-child(6) a:hover { color: #5B5B5B; } /* Paranoid nico */
-.cat-name:nth-child(7) a:hover { color: #7A29FF; } /* Ribblubs ♝ */
-.cat-name:nth-child(8) a:hover { color: #000000; font-style: italic; } /* Aegle rip */
+.cat-name:nth-child(5) a:hover { color: #360C7D; } /* moth */
+.cat-name:nth-child(6) a:hover { color: #01785D; } /* Soda :3 */
+.cat-name:nth-child(7) a:hover { color: #5B5B5B; } /* Paranoid nico */
+.cat-name:nth-child(8) a:hover { color: #7A29FF; } /* Ribblubs ♝ */
+.cat-name:nth-child(9) a:hover { color: #000000; font-style: italic; } /* Aegle rip */
 
 /* Smooth transition */
 .cat-name a {
