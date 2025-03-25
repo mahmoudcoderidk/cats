@@ -46,11 +46,11 @@ h1 {
     text-align: center;
 }
 
-h2 {
-    color: #EFC01D; /* gold */
+#the-cool-cats h2 {
+    color: #32CD32; /* Lime Green */
 }
 
-h3 {
+#cat-facts h3 {
     color: #FFA500; /* Orange */
 }
 
