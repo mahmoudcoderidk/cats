@@ -47,16 +47,16 @@ h1 {
 }
 
 #the-cool-cats h2 {
-    color: #32CD32; /* Lime Green */
+    color: #EFC01D ; /* gold */
 }
 
 #cat-facts h3 {
-    color: #FFA500; /* Orange */
+    color: #00FFA3 ; /* idk name */
 }
 
 
 .cats-facts {
-    color: #00CED1; /* Dark Turquoise */
+    color: #05A7AD; /* Dark Turquoise */
     font-weight: bold;
 }
 
