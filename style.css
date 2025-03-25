@@ -3,14 +3,17 @@ body {
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     color: rgb(200, 200, 200);
 }
-#the-cool-cats h4 {
-    color: white; /* Default color */
+#the-cool-cats a {
+    display: inline-block; /* Makes sure the transform works properly */
+    text-decoration: none; /* Removes underline from links */
+    color: white; /* Default text color */
+    font-size: 18px; /* Adjust the size */
     transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
 
-#the-cool-cats h4:hover {
+#the-cool-cats a:hover {
     color: #ffcc00; /* Change text color to yellow */
-    transform: translateX(10px) scale(1.1); /* Move slightly to the right and grow */
+    transform: translateX(10px) scale(1.1); /* Move right and grow */
 }
 
 h1 {
