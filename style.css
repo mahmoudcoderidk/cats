@@ -7,6 +7,17 @@ body {
 /* Default link colors */
 .cat-name a { color: white; text-decoration: none; }
 
+.cat-name a {
+    display: inline-block; /* Needed for transform to work */
+    text-decoration: none; /* Removes underline */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth effect */
+}
+
+.cat-name a:hover {
+    transform: translateX(10px) scale(1.1); /* Moves right & gets bigger */
+}
+
+
 /* Custom hover colors */
 .cat-name:nth-of-type(1) a:hover { color: #5D4378; } /* Scoop */
 .cat-name:nth-of-type(2) a:hover { color: #0CD0F4; } /* Nik ☆ */
