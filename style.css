@@ -51,7 +51,7 @@ h1 {
 }
 
 #cat-facts h2 {
-    color: #00FFA3 !important; /* idk name */
+    color: #00FFA3 ; /* idk name */
 }
 
 
@@ -60,7 +60,7 @@ h1 {
     font-weight: bold;
 }
 #cat-facts > h2 {
-    color:  rgb(255, 85, 0) !important; /* red-orange */
+    color:  rgb(255, 85, 0) ; /* red-orange */
 }
 
 
@@ -76,4 +76,35 @@ h1 {
 #cat-facts p, #cat-facts a {
     color: #05A7AD; /* Only applies to facts */
 }
+nav a {
+    color: white; /* Default link color */
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: white; /* Ensures visited links stay white */
+}
+
+nav a:hover {
+    color: #FFD700; /* Example hover color (gold) */
+}
+
+nav a:active {
+    color: #FF4500; /* Optional: Color when clicking (orange-red) */
+}
+a {
+    all: unset; /* Removes all default link styling */
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFD700;
+}
+
+a:active {
+    color: white;
+}
+
+
 
