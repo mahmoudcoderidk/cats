@@ -11,12 +11,13 @@ body {
 .cat-name:nth-of-type(1) a:hover { color: #5D4378; } /* Scoop */
 .cat-name:nth-of-type(2) a:hover { color: #0CD0F4; } /* Nik ☆ */
 .cat-name:nth-of-type(3) a:hover { color: #D39FF4; } /* Kiki <3 */
-.cat-name:nth-of-type(4) a:hover { color: #F39C28; } /* Ketch */
-.cat-name:nth-of-type(5) a:hover { color: #360C7D; } /* Moth */
-.cat-name:nth-of-type(6) a:hover { color: #01785D; } /* Soda :3 */
-.cat-name:nth-of-type(7) a:hover { color: #5B5B5B; } /* Paranoid nico */
-.cat-name:nth-of-type(8) a:hover { color: #7A29FF; } /* Ribblubs ♝ */
-.cat-name:nth-of-type(9) a:hover { color: #000000; font-style: italic; } /* Aegle rip */
+.cat-name:nth-of-type(4) a:hover { color: #F3E5CA; } /* noodle cat */
+.cat-name:nth-of-type(5) a:hover { color: #F39C28; } /* Ketch */
+.cat-name:nth-of-type(6) a:hover { color: #360C7D; } /* Moth */
+.cat-name:nth-of-type(7) a:hover { color: #01785D; } /* Soda :3 */
+.cat-name:nth-of-type(8) a:hover { color: #5B5B5B; } /* Paranoid nico */
+.cat-name:nth-of-type(9) a:hover { color: #7A29FF; } /* Ribblubs ♝ */
+.cat-name:nth-of-type(10) a:hover { color: #000000; font-style: italic; } /* Aegle rip */
 
 
 /* Smooth transition */
