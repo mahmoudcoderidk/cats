@@ -3,6 +3,7 @@ body {
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     color: rgb(200, 200, 200);
 }
+
 #the-cool-cats a {
     display: inline-block; /* Makes sure the transform works properly */
     text-decoration: none; /* Removes underline from links */
@@ -12,16 +13,25 @@ body {
 }
 
 #the-cool-cats a:hover {
-    color: #ffcc00; /* Change text color to yellow */
-    transform: translateX(10px) scale(1.1); /* Move right and grow */
+    transform: translateX(5px) scale(1.1); /* Move slightly right and grow */
 }
+
+.cat-name:nth-child(1):hover { color: #413A5D; } /* Scoop */
+.cat-name:nth-child(2):hover { color: #16D2EC; } /* Nik ☆ */
+.cat-name:nth-child(3):hover { color: #D39FF4; } /* Kiki <3 */
+.cat-name:nth-child(4):hover { color: #D39FF4; } /* Ketch */
+.cat-name:nth-child(5):hover { color: #01785D; } /* Soda :3 */
+.cat-name:nth-child(6):hover { color: #5B5E5D; } /* Paranoid nico */
+.cat-name:nth-child(7):hover { color: #7A29FF; } /* Ribblubs ♝ */
+.cat-name:nth-child(8):hover { color: #000000; font-style: italic; } /* Aegle rip */
 
 h1 {
     color: rgba(30, 100, 40, 1);
     text-align: center;
 }
+
 .emoji {
-    hight: 2em;
+    height: 2em;
     vertical-align: middle;
 }
 
@@ -30,12 +40,13 @@ h2, h3, h4 {
 }
 
 .cat-name {
-    color: rgb(255, 215, 0);
+    color: white; /* Default to white */
     font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .cats-facts {
-    color: rbg(0, 200, 20);
+    color: rgb(0, 200, 20);
     font-weight: bold;
 }
 
@@ -50,6 +61,7 @@ h2, h3, h4 {
 p, a {
     color: rgb(150, 220, 255);
 }
+
 
 a:hover {
     color: rgb(255, 255, 180);
