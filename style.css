@@ -93,9 +93,15 @@ nav a:active {
     color: #FF4500; /* Optional: Color when clicking (orange-red) */
 }
 
-.star-link:visited {
-    color: white;
+.star-link {
+    color: white; /* Default color */
+    text-decoration: none; /* Removes underline */
 }
+
+.star-link:visited {
+    color: white; /* Keeps it white even after clicking */
+}
+
 
 
 
