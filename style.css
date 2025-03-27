@@ -94,12 +94,12 @@ nav a:active {
 }
 
 .star-link {
-    color: white; /* Default color */
-    text-decoration: none; /* Removes underline */
+    color: rgba(30, 100, 40, 1); 
+    text-decoration: none; 
 }
 
 .star-link:visited {
-    color: white; /* Keeps it white even after clicking */
+    color: rgba(30, 100, 40, 1); 
 }
 
 
