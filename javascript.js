@@ -30,5 +30,5 @@ function click() {
         meow.currentTime = 0;
     }, 2000);
 }
-}
+
 
