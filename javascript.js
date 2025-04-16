@@ -23,8 +23,9 @@ function explodeCat() {
 function click() {
     let cat = document.getElementById("blaze"); 
     let meow = new Audio("meow.mp3");
-    let num = document.getElementById("number");
+    let num = 0
     document.getElementById("number").innerHTML = num + 1;
+    meow.play();
     setTimeout(() => {
         meow.pause();
         meow.currentTime = 0;
