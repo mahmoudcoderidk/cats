@@ -41,3 +41,26 @@ function catclick() {
         console.log("Cat clicked!");
     });
 }
+function timercat() {
+    let timecat = document.getElementById("timer");
+    let currenttime = parseInt(timecat.innerHTML) || 0;
+    timecat.innerHTML = currenttime + 1;
+}
+
+// Function to start the timer on picture click
+function startTimerOnPicClick() {
+    let cat = document.getElementById("blaze"); // Find the cat image
+    cat.addEventListener("click", function () {
+        console.log("Cat clicked! Timer started.");
+        
+        // Ensure the timer starts from 0 when clicked
+        let timecat = document.getElementById("timer");
+        timecat.innerHTML = "0";
+
+        // Call `timercat` every second
+        setInterval(timercat, 1000);
+    });
+}
+
+// Initialize the timer functionality when the page loads
+startTimerOnPicClick();
