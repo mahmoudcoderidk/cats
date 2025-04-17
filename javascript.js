@@ -25,13 +25,24 @@ function catclick() {
     let meow = new Audio("meow.mp3");
     let num = document.getElementById("number");
     let currentValue = parseInt(num.innerHTML) || 0;
-    document.getElementById("blaze").addEventListener("click", click);
+
+    // Increment the counter
     num.innerHTML = currentValue + 1;
 
+    // Play the meow sound
     meow.play();
     setTimeout(() => {
         meow.pause();
         meow.currentTime = 0;
     }, 2000);
+
+    // Add the click event listener only if not already added
+    if (!cat.classList.contains("click-listener-added")) {
+        cat.addEventListener("click", () => {
+            // Define the behavior for the click event
+            console.log("Cat clicked!");
+        });
+        cat.classList.add("click-listener-added");
+    }
 }
 
