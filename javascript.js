@@ -59,11 +59,6 @@ function startTimerOnPicClick() {
         let timecat = document.getElementById("timer");
         timecat.innerHTML = "0";
 
-        // Clear any existing interval to avoid multiple intervals running
-        if (timerInterval) {
-            clearInterval(timerInterval);
-        }
-
         // Call `timercat` every second
         timerInterval = setInterval(timercat, 1000);
     });
