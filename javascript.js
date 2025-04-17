@@ -36,13 +36,8 @@ function catclick() {
         meow.currentTime = 0;
     }, 2000);
 
-    // Add the click event listener only if not already added
-    if (!cat.classList.contains("click-listener-added")) {
-        cat.addEventListener("click", () => {
-            // Define the behavior for the click event
-            console.log("Cat clicked!");
-        });
-        cat.classList.add("click-listener-added");
-    }
+    // Add the click event listener
+    cat.addEventListener("click", function () {
+        console.log("Cat clicked!");
+    });
 }
-
