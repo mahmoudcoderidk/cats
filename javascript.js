@@ -20,7 +20,7 @@ function explodeCat() {
         cat.src = "cat.png"; // After 1.5 seconds, change back to normal
     }, 1500);
 }
-function click() {
+function catclick() {
     let cat = document.getElementById("blaze");
     let meow = new Audio("meow.mp3");
     let num = document.getElementById("number");
