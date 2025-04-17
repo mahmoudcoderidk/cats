@@ -1,7 +1,5 @@
-let timerInterval; // Variable to store the interval ID
-let timerRunning = false; // Flag to check if the timer is already running
+let cat = document.getElementById("blaze"); // Find the cat image
 
-// Function to handle the exploding cat
 function explodeCat() {
     let cat = document.getElementById("exploding-cat"); // Find the cat image
     let explosionSound = new Audio("explosion.mp3"); // Load the sound
@@ -25,15 +23,19 @@ function explodeCat() {
     }, 1500);
 }
 
-// Function to handle the cat click and counter
+function timercat() {
+    let timecat = document.getElementById("timer");
+    let currenttime = parseInt(timecat.innerHTML) || 0;
+    timecat.innerHTML = currenttime + 1;
+}
+
 function catclick() {
     let cat = document.getElementById("blaze");
     let meow = new Audio("meow.mp3");
     let num = document.getElementById("number");
-    let currentValue = parseInt(num.innerHTML) || 0;
 
     // Increment the counter
-    num.innerHTML = currentValue + 1;
+    num.innerHTML++;
 
     // Play the meow sound
     meow.play();
@@ -41,51 +43,18 @@ function catclick() {
         meow.pause();
         meow.currentTime = 0;
     }, 2000);
-}
 
-// Function to increment the timer
-function timercat() {
-    let timecat = document.getElementById("timer");
-    let currenttime = parseInt(timecat.innerHTML) || 0;
-    timecat.innerHTML = currenttime + 1;
-}
+    // Add the click event listener
+    console.log("Cat clicked!");
+    console.log(num.innerHTML);
+    if (num.innerHTML==1) {
+        console.log("Timer started.");
 
-// Function to start the timer on picture click
-function startTimerOnPicClick() {
-    let cat = document.getElementById("blaze"); // Find the cat image
-    cat.addEventListener("click", function () {
-        if (!timerRunning) {
-            console.log("Cat clicked! Timer started.");
-            
-            // Ensure the timer starts from 0 only initially
-            let timecat = document.getElementById("timer");
-            timecat.innerHTML = "0";
+        // Ensure the timer starts from 0 when clicked
+        let timecat = document.getElementById("timer");
+        timecat.innerHTML = "0";
 
-            // Call `timercat` every second
-            timerInterval = setInterval(timercat, 1000);
-            timerRunning = true; // Mark the timer as running
-        }
-    });
-}
-
-// Initialize the functionality when the page loads
-function initializeCats() {
-    let blazeCat = document.getElementById("blaze");
-    let explodingCat = document.getElementById("exploding-cat");
-
-    if (blazeCat) {
-        // Add click event for the cat click functionality
-        blazeCat.addEventListener("click", catclick);
+        // Call timercat every second
+        timerInterval = setInterval(timercat, 1000);
     }
-
-    if (explodingCat) {
-        // Add click event for the exploding cat functionality
-        explodingCat.addEventListener("click", explodeCat);
-    }
-
-    // Start the timer functionality
-    startTimerOnPicClick();
 }
-
-// Run initialization on page load
-initializeCats();
