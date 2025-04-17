@@ -8,3 +8,8 @@ body {
   color: #022706;
   bgcolor: #36505F;
 }
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
