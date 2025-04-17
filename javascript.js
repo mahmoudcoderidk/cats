@@ -41,6 +41,8 @@ function catclick() {
         console.log("Cat clicked!");
     });
 }
+let timerInterval; // Variable to store the interval ID
+
 function timercat() {
     let timecat = document.getElementById("timer");
     let currenttime = parseInt(timecat.innerHTML) || 0;
@@ -57,8 +59,13 @@ function startTimerOnPicClick() {
         let timecat = document.getElementById("timer");
         timecat.innerHTML = "0";
 
+        // Clear any existing interval to avoid multiple intervals running
+        if (timerInterval) {
+            clearInterval(timerInterval);
+        }
+
         // Call `timercat` every second
-        setInterval(timercat, 1000);
+        timerInterval = setInterval(timercat, 1000);
     });
 }
 
