@@ -1,3 +1,7 @@
+let timerInterval; // Variable to store the interval ID
+let timerRunning = false; // Flag to check if the timer is already running
+
+// Function to handle the exploding cat
 function explodeCat() {
     let cat = document.getElementById("exploding-cat"); // Find the cat image
     let explosionSound = new Audio("explosion.mp3"); // Load the sound
@@ -20,6 +24,8 @@ function explodeCat() {
         cat.src = "cat.png"; // After 1.5 seconds, change back to normal
     }, 1500);
 }
+
+// Function to handle the cat click and counter
 function catclick() {
     let cat = document.getElementById("blaze");
     let meow = new Audio("meow.mp3");
@@ -35,14 +41,9 @@ function catclick() {
         meow.pause();
         meow.currentTime = 0;
     }, 2000);
-
-    // Add the click event listener
-    cat.addEventListener("click", function () {
-        console.log("Cat clicked!");
-    });
 }
-let timerInterval; // Variable to store the interval ID
 
+// Function to increment the timer
 function timercat() {
     let timecat = document.getElementById("timer");
     let currenttime = parseInt(timecat.innerHTML) || 0;
@@ -53,16 +54,38 @@ function timercat() {
 function startTimerOnPicClick() {
     let cat = document.getElementById("blaze"); // Find the cat image
     cat.addEventListener("click", function () {
-        console.log("Cat clicked! Timer started.");
-        
-        // Ensure the timer starts from 0 when clicked
-        let timecat = document.getElementById("timer");
-        timecat.innerHTML = "0";
+        if (!timerRunning) {
+            console.log("Cat clicked! Timer started.");
+            
+            // Ensure the timer starts from 0 only initially
+            let timecat = document.getElementById("timer");
+            timecat.innerHTML = "0";
 
-        // Call `timercat` every second
-        timerInterval = setInterval(timercat, 1000);
+            // Call `timercat` every second
+            timerInterval = setInterval(timercat, 1000);
+            timerRunning = true; // Mark the timer as running
+        }
     });
 }
 
-// Initialize the timer functionality when the page loads
-startTimerOnPicClick();
+// Initialize the functionality when the page loads
+function initializeCats() {
+    let blazeCat = document.getElementById("blaze");
+    let explodingCat = document.getElementById("exploding-cat");
+
+    if (blazeCat) {
+        // Add click event for the cat click functionality
+        blazeCat.addEventListener("click", catclick);
+    }
+
+    if (explodingCat) {
+        // Add click event for the exploding cat functionality
+        explodingCat.addEventListener("click", explodeCat);
+    }
+
+    // Start the timer functionality
+    startTimerOnPicClick();
+}
+
+// Run initialization on page load
+initializeCats();
