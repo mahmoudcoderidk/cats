@@ -21,15 +21,16 @@ function explodeCat() {
     }, 1500);
 }
 function click() {
-    let cat = document.getElementById("blaze"); 
+    let cat = document.getElementById("blaze");
     let meow = new Audio("meow.mp3");
     let num = document.getElementById("number");
-    document.getElementById("number").innerHTML = num + 1;
+    let currentValue = parseInt(num.innerHTML) || 0;
+    num.innerHTML = currentValue + 1;
+
     meow.play();
     setTimeout(() => {
         meow.pause();
         meow.currentTime = 0;
     }, 2000);
 }
-
 
