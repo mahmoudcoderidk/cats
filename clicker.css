@@ -4,7 +4,7 @@ body {
   color: #7239CA;
 }
 
-.home-button {
+#home-button {
   color: #022706;
   bgcolor: #36505F;
 }
@@ -13,12 +13,12 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-.h1 {
+h1 {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-.p {
+p {
   font-size: 24px;
   display: block;
   margin-left: auto;
