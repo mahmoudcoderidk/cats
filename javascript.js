@@ -25,6 +25,7 @@ function click() {
     let meow = new Audio("meow.mp3");
     let num = document.getElementById("number");
     let currentValue = parseInt(num.innerHTML) || 0;
+    document.getElementById("blaze").addEventListener("click", click);
     num.innerHTML = currentValue + 1;
 
     meow.play();
