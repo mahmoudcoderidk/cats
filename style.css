@@ -16,6 +16,20 @@ body {
 .cat-name a:hover {
     transform: translateX(10px) scale(1.1); /* Moves right & gets bigger */
 }
+/* Default link colors */
+.frog-name a { color: white; text-decoration: none; }
+
+.frog-name a {
+    display: inline-block; /* Needed for transform to work */
+    text-decoration: none; /* Removes underline */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth effect */
+}
+
+.frog-name a:hover {
+    transform: translateX(10px) scale(1.1); /* Moves right & gets bigger */
+}
+
+
 
 
 /* Custom hover colors */
