@@ -41,6 +41,12 @@ body {
 .cat-name a:hover {
     transform: translateX(10px) scale(1.1); /* Move right & grow */
 }
+#the-evil-frog h2 {
+    color: #EFC01D ;
+}
+#the-evil-frog p {
+    color: #a32c24 ;
+}
 
 
 h1 {
